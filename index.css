@@ -8,7 +8,7 @@ html {
   border: none;
   margin-top: 0px;
   margin-right: 30px;
-  margin-leftt: 30px;
+  margin-left: 30px;
   font-size: 15px;
   font-family: system-ui;
   color: #525252;
@@ -49,14 +49,34 @@ h2 {
 
 
 body {
-    font-family: system-ui;
+  font-family: system-ui;
+  background: linear-gradient(-45deg, #FFF, #43D2FF, #FFF, #FFEC3F, #FFF, #FF9BE3);
+	background-size: 400% 400%;
+	animation: gradient 40s ease infinite;
 }
-footer {
-    background: #ECE7E6;
-    color: white;
-    line-height: 90px;
-    padding: 0px;
-    text-align: center;
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.foot {
+  background: #000;
+  color: white;
+  height: 8vmin;
+  bottom: 0;
+  padding: 0px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  width: 100%;
 }
 .active {
 }
